@@ -1,3 +1,10 @@
+#cada eni é uma interface, precisa contar os itens indibiduais para cada
+#cada ENI é um arquivo rrdtool.
+#preciso saber quais eni, criar um arquivo rrd para cada métrica
+#métricas: Pacotes, bytes, ações
+#https://blaqfireroundup.wordpress.com/2020/06/24/analyzing-vpc-flow-logs-with-python-pyspark-and-pandas/
+import sys
+#import pyrrd.rrd
 import ipaddress
 import random
 import time
@@ -42,3 +49,4 @@ for flows in listresult:
 #print(fivetuple)
 print("total de bytes: " + str(bytestotal) + ' em: ' + str(qtdconn) + ' conexões')
 
+ 
